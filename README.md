@@ -1,9 +1,9 @@
 pypi stats bot
 # Запуск
 * python src/main.py
-или
 * docker compose up -d --build
 
+# Настройка
 Отредактируйте .env
 BOT_TOKEN= # Токен бота с @BotFather
 PEPY_API_KEY= # Токен pepy с https://pepy.tech/user
