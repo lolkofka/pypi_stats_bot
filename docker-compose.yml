@@ -1,0 +1,12 @@
+services:
+  vakarent:
+    build: .
+    restart: unless-stopped
+    networks:
+      - virtual-hosts
+    volumes:
+      - ./data:/usr/app/data
+
+networks:
+  virtual-hosts:
+    external: true
