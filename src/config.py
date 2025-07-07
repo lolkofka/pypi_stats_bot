@@ -2,12 +2,12 @@ import os
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
-ENV_PATH = ".env"
+ENV_PATH = "data/.env"
 
-# dir_name = os.path.dirname(ENV_PATH)
+dir_name = os.path.dirname(ENV_PATH)
 
-# if not os.path.exists(dir_name):
-#     os.makedirs(dir_name)
+if not os.path.exists(dir_name):
+    os.makedirs(dir_name)
 
 if not os.path.exists(ENV_PATH):
     with open(ENV_PATH, "w") as f:
